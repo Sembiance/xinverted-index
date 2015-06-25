@@ -1,0 +1,17 @@
+{ "name": "xinverted-index",
+  "version": "1.0.0",
+  "author": "Robert Schultz <robert@cosmicrealms.com>",
+  "description": "A fast full-text multi-term complex query search engine for an array of objects utilizing an inverted index approach",
+  "main": "index",
+  "dependencies"			:
+	{
+		"xutil"				: "git://github.com/Sembiance/xutil.git",
+		"xbase"				: "git://github.com/Sembiance/xbase.git",
+		"pegjs"				: "= 0.8.0"
+	},
+  "engines": { "node": ">0.3.0" },
+  "keywords": [ "inverted", "index", "full-text", "search" ],
+  "homepage" : "http://github.com/Sembiance/xinverted-index",
+  "licenses": [ { "type": "MIT", "url": "http://github.com/Sembiance/inverted-index/raw/master/LICENSE" } ],
+  "repository": { "type": "git", "url": "http://github.com/Sembiance/inverted-index.git" }
+}
