@@ -1,9 +1,9 @@
 "use strict";
 
-var base = require("xbase"),
+var base = require("@sembiance/xbase"),
 	PEG = require("pegjs"),
 	path = require("path"),
-	unicodeUtil = require("xutil").unicode,
+	unicodeUtil = require("@sembiance/xutil").unicode,
 	fs = require("fs");
 
 var MAX_TOKENS = 10;
