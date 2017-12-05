@@ -1,5 +1,5 @@
-{ "name": "xinverted-index",
-  "version": "1.0.3",
+{ "name": "@sembiance/xinverted-index",
+  "version": "1.0.4",
   "author": "Robert Schultz <robert@cosmicrealms.com>",
   "description": "A fast full-text multi-term complex query search engine for an array of objects utilizing an inverted index approach",
   "main": "index",
