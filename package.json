@@ -1,12 +1,12 @@
 { "name": "xinverted-index",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "Robert Schultz <robert@cosmicrealms.com>",
   "description": "A fast full-text multi-term complex query search engine for an array of objects utilizing an inverted index approach",
   "main": "index",
   "dependencies"			:
 	{
-		"@sembiance/xutil" : ">=1.0.0",
-		"@sembiance/xbase" : ">=1.0.0",
+    "@sembiance/xbase": "file:/mnt/compendium/DevLab/node-modules/xbase",
+    "@sembiance/xutil": "file:/mnt/compendium/DevLab/node-modules/xutil",
 		"pegjs"				     : "= 0.8.0"
 	},
   "engines": { "node": ">0.3.0" },
