@@ -105,13 +105,12 @@ MATCH
 		key = unicodeToAscii(key).toLowerCase();
 		value= unicodeToAscii(value).toLowerCase();
 
-		if(!index.hasOwnProperty(key))
-			throw new SyntaxError("Invalid key: " + key);
-		if(!index[key].hasOwnProperty(value))
-			throw new SyntaxError("Invalid value [" + value + "] for key: " + key);
-
-		if((comparator.startsWith("<") || comparator.startsWith(">")) && !index.numerical.contains(key))
-			throw new SyntaxError("Invalid numerical comparator [%s] for key: %s", comparator, key);
+		//if(!index.hasOwnProperty(key))
+		//	throw new SyntaxError("Invalid key: " + key);
+		//if((comparator.startsWith("<") || comparator.startsWith(">")) && !index.numerical.contains(key))
+		//	throw new SyntaxError("Invalid numerical comparator [%s] for key: %s", comparator, key);
+		//if(!index[key].hasOwnProperty(value))
+		//	throw new SyntaxError("Invalid value [" + value + "] for key: " + key);
 
 		var values = [];
 		var valueAsNum = +((""+value).replace(/[^0-9.]+/, ""));
