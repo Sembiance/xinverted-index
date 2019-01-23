@@ -22,7 +22,7 @@ function buildIndex(items, _options)
 {
 	const options = _options || {};
 
-	const index = { all : [], numerical : Array.toArray(options.numerical || [])};
+	const index = { all : [], numerical : (options.numerical ? (Array.isArray(options.numerical) ? options.numerical : [options.numerical]) : [])};
 
 	items.forEach((item, i) =>
 	{
@@ -60,7 +60,7 @@ function processKey(index, item, idx, key, maxTokens)
 	}
 	else if(typeof value==="number")
 	{
-		if(!index.numerical.contains(key))
+		if(!index.numerical.includes(key))
 			index.numerical.push(key);
 
 		addToIndex(index, key, value, idx);
@@ -85,13 +85,13 @@ function addToIndex(index, key, _value, i)
 	if(!index[key].hasOwnProperty(value))
 		index[key][value] = [];
 
-	if(!index[key][value].contains(i))
+	if(!index[key][value].includes(i))
 		index[key][value].push(i);
 
-	if(index.numerical.contains(key))
+	if(index.numerical.includes(key))
 	{
 		const valueNum = +((""+value).replace(/[^0-9.]+/, ""));
-		if(!index[key]._.contains(valueNum))
+		if(!index[key]._.includes(valueNum))
 			index[key]._.push(valueNum);
 	}
 }
