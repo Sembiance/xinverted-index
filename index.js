@@ -1,6 +1,6 @@
 "use strict";
 
-const base = require("@sembiance/xbase"),
+const XU = require("@sembiance/xu"),
 	PEG = require("pegjs"),
 	path = require("path"),
 	unicodeUtil = require("@sembiance/xutil").unicode,
@@ -8,7 +8,7 @@ const base = require("@sembiance/xbase"),
 
 const MAX_TOKENS = 10;
 
-const parser = PEG.generate(fs.readFileSync(path.join(__dirname, "grammar.pegjs"), base.UTF8));
+const parser = PEG.generate(fs.readFileSync(path.join(__dirname, "grammar.pegjs"), XU.UTF8));
 
 exports.search = search;
 function search(index, query)

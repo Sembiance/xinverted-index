@@ -1,7 +1,7 @@
 "use strict";
 /* eslint-disable no-multi-spaces */
 
-const base = require("@sembiance/xbase"),
+const XU = require("@sembiance/xu"),
 	assert = require("assert"),
 	invertedIndex = require("./index.js");
 

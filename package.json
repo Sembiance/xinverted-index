@@ -11,7 +11,7 @@
 	"repository"   : { "type" : "git", "url": "http://github.com/Sembiance/inverted-index.git" },
 	"dependencies" :
 	{
-		"@sembiance/xbase" : "file:/mnt/compendium/DevLab/node-modules/xbase",
+		"@sembiance/xu" : "file:/mnt/compendium/DevLab/node-modules/xu",
 		"@sembiance/xutil" : "file:/mnt/compendium/DevLab/node-modules/xutil",
 		"pegjs"            : "~0.10.0"
 	}
