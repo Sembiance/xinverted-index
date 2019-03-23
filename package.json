@@ -7,11 +7,21 @@
 	"engines"      : { "node" : ">0.3.0" },
 	"keywords"     : [ "inverted", "index", "full-text", "search" ],
 	"homepage"     : "http://github.com/Sembiance/xinverted-index",
-	"licenses"     : [ { "type" : "MIT", "url": "http://github.com/Sembiance/inverted-index/raw/master/LICENSE" } ],
-	"repository"   : { "type" : "git", "url": "http://github.com/Sembiance/inverted-index.git" },
+	"licenses"     :
+	[
+		{
+			"type" : "MIT",
+			"url"  : "http://github.com/Sembiance/inverted-index/raw/master/LICENSE"
+		}
+	],
+	"repository"   :
+	{
+		"type" : "git",
+		"url"  : "http://github.com/Sembiance/inverted-index.git"
+	},
 	"dependencies" :
 	{
-		"@sembiance/xu" : "file:/mnt/compendium/DevLab/node-modules/xu",
+		"@sembiance/xu"    : "file:/mnt/compendium/DevLab/node-modules/xu",
 		"@sembiance/xutil" : "file:/mnt/compendium/DevLab/node-modules/xutil",
 		"pegjs"            : "~0.10.0"
 	}
