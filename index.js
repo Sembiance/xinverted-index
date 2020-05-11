@@ -22,7 +22,7 @@ function buildIndex(items, _options)
 {
 	const options = _options || {};
 
-	const index = { all : [], numerical : (options.numerical ? (Array.isArray(options.numerical) ? options.numerical : [options.numerical]) : [])};
+	const index = { all : [], numerical : (options.numerical ? Array.force(options.numerical) : [])};
 
 	items.forEach((item, i) =>
 	{

@@ -21,9 +21,4 @@ const index = invertedIndex.buildIndex(records);
 	["age<=39", [0, 2]],
 	["gender:male AND age<5", [2]],
 	["gender:male AND alive:true", [0, 3]]
-].forEach(searchTest =>
-{
-	//const result = invertedIndex.search(index, searchTest[0]);
-	//console.log(searchTest[0], searchTest[1], result);
-	assert(invertedIndex.search(index, searchTest[0]).equals(searchTest[1]));
-});
+].forEach(searchTest => assert(invertedIndex.search(index, searchTest[0]).equals(searchTest[1])));

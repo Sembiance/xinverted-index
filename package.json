@@ -4,7 +4,7 @@
 	"author"       : "Robert Schultz <robert@cosmicrealms.com>",
 	"description"  : "A fast full-text multi-term complex query search engine for an array of objects utilizing an inverted index approach",
 	"main"         : "index",
-	"engines"      : { "node" : ">0.3.0" },
+	"engines"      : { "node" : ">=14" },
 	"keywords"     : [ "inverted", "index", "full-text", "search" ],
 	"homepage"     : "http://github.com/Sembiance/xinverted-index",
 	"licenses"     :
