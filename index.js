@@ -71,7 +71,7 @@ function processKey(index, item, idx, key, maxTokens)
 	}
 	else
 	{
-		throw new Error("Un-handled type [" + typeof value + "] for key [" + key + "] with value: " + value);
+		throw new TypeError(`Un-handled type [${typeof value}] for key [${key}] with value: ${value}`);
 	}
 }
 
@@ -90,7 +90,7 @@ function addToIndex(index, key, _value, i)
 
 	if(index.numerical.includes(key))
 	{
-		const valueNum = +((""+value).replace(/[^0-9.]+/, ""));
+		const valueNum = +(`${value}`.replace(/[^\d.]+/, ""));
 		if(!index[key]._.includes(valueNum))
 			index[key]._.push(valueNum);
 	}
